@@ -1,5 +1,5 @@
-# Mobile Application Development Project Template
-You must use this template to start your project.
+# Mobile Application Development Project 
+by Petre Diaconescu
 
-## How to get this template
-You can clone it using 'git clone <url>' where <url> is the ssh url on the right, or you can click "Download ZIP" on the right and start from there.
+## The instructions here later on
+... to be filled later
