@@ -1,17 +1,17 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope) {
- $scope.categories = ['Add new', 'Total for today', 'Reccommended'];
+ $scope.categories = ['add_new', 'daily_calculator', 'food_list'];
   
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Test', id: 1 },
-    { title: 'Test', id: 2 },
-    { title: 'Test', id: 3 },
+.controller('FoodListCtrl', function($scope) {
+  $scope.food_list = [
+    { title: 'pears', id: 1 },
+    { title: 'apple', id: 2 },
+    { title: 'orange', id: 3 },
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('ItemInfoCtrl', function($scope, $stateParams) {
 });
