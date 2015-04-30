@@ -56,16 +56,23 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-/*  url: "/food_list/:playlistId" -- changed */
-  .state('app.single', {
+      .state('app.single', {
     url: "/food_list/:item_infoId",
     views: {
       'menuContent': {
         templateUrl: "templates/item_info.html",
-        controller: 'ItemInfoCtrl'
+        controller: 'FoodListCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/food_list');
 });
+
+
+
+
+
+
+
+

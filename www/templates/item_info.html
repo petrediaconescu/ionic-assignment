@@ -1,9 +1,11 @@
-<ion-view view-title="{{item_info.title}}">
+<ion-view view-title="{{ item_info.title }}">
   <ion-content class="padding">
-    <img ng-src="{{item_info.imgsrc}}" style="width: 64px; height: 64px">
+  <h2>{{ item_info.title }}</h2>
+    <img ng-src="{{ item_info.imgsrc }}" style="width: 64px; height: 64px">
     <p>
       {{item_info.calories}}
     </p>
+	
   </ion-content>
 </ion-view>
 
