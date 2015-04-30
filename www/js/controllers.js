@@ -5,11 +5,11 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('FoodListCtrl', function($scope) {
+.controller('FoodListCtrl', function($scope, $stateParams) {
   $scope.food_list = [
-    { title: 'pears', id: 1 },
-    { title: 'apple', id: 2 },
-    { title: 'orange', id: 3 },
+    { title: 'pears', imgsrc: "img/ionic.png", id: 1, calories: 10},
+    { title: 'apple', imgsrc: "img/ionic.png", id: 2 , calories: 15},
+    { title: 'orange', imgsrc: "img/ionic.png", id: 3 , calories: 12},
   ];
 })
 
