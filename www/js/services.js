@@ -346,8 +346,13 @@ angular.module('starter.services', [])
     all: function() {
       return chats;
     },
-    remove: function(chat) {
+    addCalories: function(chat, $rootScope, $scope) {
+	$rootScope.count = $scope.count + calories;
+		  Chats.save($rootScope.count);
       chats.splice(chats.indexOf(chat), 1);
+    },
+	save: function(chats) {
+      window.localStorage['chats'] = angular.toJson(chats);
     },
     get: function(chatId) {
       for (var i = 0; i < chats.length; i++) {
