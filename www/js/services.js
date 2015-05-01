@@ -6,14 +6,16 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: "Back bacon",
+	face: "img/meat/backbacon.jpg",
+	calories: 120,
+	lastText: "Back bacon is a traditional British cut of typically unsmoked bacon[1] sliced to include both the pork loin from the back and a bit of pork belly in the same cut. It is either wet or dry cured, and is completely unlike and much leaner than American style smoked side bacon made only from the pork belly."
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: "Beef fillet", 
+	imgsrc: "img/meat/beeffillet.jpg", 
+	calories: 140,
+	lastText: "text from services.js"
   }, {
     id: 2,
     name: 'Andrew Jostlin',
@@ -31,6 +33,14 @@ angular.module('starter.services', [])
     face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
   }];
 
+  
+  
+  
+  
+  
+  
+  
+  
   return {
     all: function() {
       return chats;
