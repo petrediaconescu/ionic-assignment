@@ -1,17 +1,20 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope) {
- $scope.categories = ['add_new', 'daily_calculator', 'food_list'];
-  
+.controller('DashCtrl', function($scope) {})
+
+.controller('ChatsCtrl', function($scope, Chats) {
+  $scope.chats = Chats.all();
+  $scope.remove = function(chat) {
+    Chats.remove(chat);
+  }
 })
 
-.controller('FoodListCtrl', function($scope, $stateParams) {
-  $scope.food_list = [
-    { title: 'pears', imgsrc: "img/ionic.png", id: 1, calories: 10},
-    { title: 'apple', imgsrc: "img/ionic.png", id: 2 , calories: 15},
-    { title: 'orange', imgsrc: "img/ionic.png", id: 3 , calories: 12},
-  ];
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+  $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('ItemInfoCtrl', function($scope, $stateParams) {
+.controller('AccountCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
 });
