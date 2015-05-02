@@ -3,11 +3,11 @@
     <div ng-controller="DashCtrl">
       Food name:
       <br />
-      <input type="text" ng-model="name" />
+      <input type="text" ng-model="name" /> {{name}}
       <br />
 
       <ul>
-        <h3 ng-repeat="food in food_list"></h3>
+        <li ng-repeat="food in food_list">{{food.name}}</li>
       </ul> 
     </div>
     
