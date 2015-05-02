@@ -1,11 +1,29 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <button ng-click="function1({{Chat.calories}})" class="button button-balanced" style="float: right;">
-      {{ Chat.calories}}
-    </button>
+<ion-view view-title="Calculate Calories">
+  <ion-content class="padding" ng-controller="DashCtrl">
+
+  <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="food in food_list" type="item-text-wrap" href="#/tab/dash/{{food.id}}">
+      
+        <h2>{{food.title}}</h2>
+       <p>test</p>
+       
+
+       
+      </ion-item>
+    </ion-list>
 	
-				<p>Total Calories:
-			<input type="text" ng-model="count" style="float: right;"/>
-			</p>
+    <!-- <div >
+      Food name:
+      <br />
+      <input type="text" ng-model="name" />
+      <br />
+
+      <ul>
+        <li ng-repeat="chat in chats | filter:name">
+      </ul> 
+     
+	   
+
+    </div> -->
   </ion-content>
 </ion-view>
