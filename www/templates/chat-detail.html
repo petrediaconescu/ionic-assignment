@@ -1,27 +1,26 @@
-
+<!-- It is dynamically building with information from the selected item  -->
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
-   
-<div class="list card">
-
-  <div class="item item-avatar">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-	Calories: 
-	</p>
-	<p>
-      {{chat.calories}}
-    </p>
-  </div>
-
-  <div class="item item-body">
-    <img ng-src="{{chat.face}}" class="full-image">
-   <p>
-      {{chat.lastText}}
-    </p>
-    
-  </div>
-
- </div>
- </ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <!-- image in the corner -->
+        <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+        <p>
+          Calories:
+        </p>
+        <!-- displays the calories of the selected item -->
+        <p>
+          {{chat.calories}}
+        </p>
+      </div>
+      <!-- the big image -->
+      <div class="item item-body">
+        <img ng-src="{{chat.face}}" class="full-image">
+        <!-- displays the description of the item -->
+        <p>
+          {{chat.lastText}}
+        </p>
+      </div>
+    </div>
+  </ion-content>
 </ion-view>

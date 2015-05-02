@@ -1,12 +1,18 @@
+<!-- title -->
 <ion-view view-title="Food List">
   <ion-content>
     <ion-list>
+      <!-- using ng-repeat to display dynamically all the items -->
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <!-- display image -->
         <img ng-src="{{chat.face}}">
+        <!-- display title -->
         <h2>{{chat.name}}</h2>
+        <!-- display details -->
         <p>{{chat.lastText}}</p>
+        <!-- display arrow to navigate to the next screen with details -->
         <i class="icon ion-chevron-right icon-accessory"></i>
-
+        <!-- when swap to the left, it will display this button -->
         <ion-option-button class="button-assertive" ng-click="addCalories(chat)">
           Add calories
         </ion-option-button>
