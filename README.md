@@ -1,5 +1,6 @@
 # Mobile Application Development Project 
-by Petre Diaconescu
+by Petre Diaconescu. G00329580 
 
-## The instructions here later on
-... to be filled later
+## General Information
+The app was built using the Ionic framework.
+The app is using Angular JS.
