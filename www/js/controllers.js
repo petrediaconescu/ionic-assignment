@@ -1,20 +1,10 @@
 angular.module('starter.controllers', [])
 
-
-
-.controller('DashCtrl', function($scope) {
-  $scope.food_list = [
-    { title: 'pears', id: 1 },
-   { title: 'apple', id: 2 },
-   { title: 'orange', id: 3 },
-   ];
- })
-
-
 .controller('ChatsCtrl', function($scope, $rootScope, Chats) {
 
 	$rootScope.count = 0;
 	
+	// returns all the objects from chats array (created in services.js factory)
 	$scope.chats = Chats.all();
 	$scope.addCalories = function(chat, $rootScope, $scope) {
       Chats.addCalories(chat, $rootScope, $scope);
@@ -38,10 +28,12 @@ angular.module('starter.controllers', [])
 	};
 })
 
+// get one item at the time, depending on the ID
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
+// function to calculate the burning calories, not used for the moment, to be added in the next version
 .controller('BurnCtrl', function($scope){
 function calculateCaloriesBurned() {
 alert("test")
@@ -50,9 +42,3 @@ alert("test")
   document.getElementById('caloriesBurned').value = cals;
 }
 })
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});

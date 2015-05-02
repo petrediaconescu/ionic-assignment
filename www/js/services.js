@@ -1,9 +1,9 @@
 angular.module('starter.services', [])
 
 .factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
 
-  // Some testing data
+  // Create an array of objects to store info about food
+  // To be used a JSON resource or wikipedia.js for the next version 
   var chats = [{
     id: 0,
     name: "Back bacon",
